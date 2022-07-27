@@ -59,9 +59,9 @@ export default function ProgramSkills() {
             colorIcon="#3498db"
           />
           <Progress
-            width="30"
+            width="60"
             title="NodeJs"
-            color="warning"
+            color="info"
             icon={faNode}
             colorIcon="#27ae60"
           />

@@ -1,6 +1,6 @@
 import "./css/footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faTelegram } from "@fortawesome/free-brands-svg-icons";
 import { faRectangleList } from "@fortawesome/free-solid-svg-icons";
 export default function Footer({ displayParagraph }) {
   return (
@@ -25,12 +25,16 @@ export default function Footer({ displayParagraph }) {
               <div className="row">
                 <div className="col-6 text-center">
                   <a
-                    href="https://www.linkedin.com/in/diego-acetun"
+                    href="https://t.me/DiegoAcetun"
                     className="text-light"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <FontAwesomeIcon icon={faLinkedin} size="4x" />
+                    <FontAwesomeIcon
+                      icon={faTelegram}
+                      size="4x"
+                      
+                    />
                   </a>
                 </div>
 
