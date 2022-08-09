@@ -2,7 +2,7 @@
   "name": "my-web-site",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://diegoacetun.github.io/my-web-site",
+  "homepage": "http://DiegoAcetun.github.io/my-web-site",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-brands-svg-icons": "^6.1.1",
