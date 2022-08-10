@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="col-sm-4 text-center border border-primary py-2">
             <p className="h5">PROYECTOS</p>
             <a
-              href="https://github.com/diego-008/"
+              href="https://github.com/DiegoAcetun/"
               className="text-light"
               target="_blank"
               rel="noreferrer"

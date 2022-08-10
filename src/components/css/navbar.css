@@ -6,3 +6,8 @@
 .custom-navbar a:hover{
     text-decoration: underline;
 }
+
+.custom-navbar a{
+    text-decoration: none;
+    color: white;
+}
