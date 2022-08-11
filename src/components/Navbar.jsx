@@ -24,7 +24,7 @@ export default function Navbar() {
           <ul className="md:hidden text-white flex ml-16 space-x-8 text-3xl">
             <li className="hover:bg-transparent">
               <a href="">
-                <FontAwesomeIcon icon={faGithub} size="1x" color="" />
+                <FontAwesomeIcon icon={faGithub} size="1x" />
               </a>
             </li>
             <li className="hover:bg-transparent">
