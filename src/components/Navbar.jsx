@@ -12,32 +12,32 @@ export default function Navbar() {
 
   return (
     <nav className="bg-white sm:py-3 py-1 border-gray-200 dark:bg-gray-900">
-      <div className="flex flex-wrap items-center ml-5">
-        <a href="https://flowbite.com/" className="flex items-center">
+      <div className="flex flex-wrap items-center justify-around">
+        <Link to="https://flowbite.com/" className="flex items-center">
           <img
             src="https://raw.githubusercontent.com/DiegoAcetun/my-web-site/main/public/favicon.ico"
             className="mr-3 h-6 sm:h-7"
             alt="logo"
           />
-        </a>
-        <div>
-          <ul className="md:hidden text-white flex ml-16 space-x-8 text-3xl">
+        </Link>
+        <div className="md:hidden text-white">
+          <ul className=" flex space-x-8 text-3xl">
             <li className="hover:bg-transparent">
-              <a href="">
+              <Link to="">
                 <FontAwesomeIcon icon={faGithub} size="1x" />
-              </a>
+              </Link>
             </li>
             <li className="hover:bg-transparent">
-              <a href="">
+              <Link to="">
                 <FontAwesomeIcon icon={faTelegram} size="1x" />
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
         <button
           data-collapse-toggle="navbar-default"
           type="button"
-          className="inline-flex items-center text-sm text-gray-400 rounded-lg md:hidden ml-auto mr-2"
+          className="inline-flex items-center text-sm border-2 border-blue-500 	 text-gray-400 rounded-lg md:hidden"
           aria-controls="navbar-default"
           aria-expanded="false"
           onClick={() => {
@@ -61,36 +61,38 @@ export default function Navbar() {
         </button>
 
         <div
-          className="hidden w-full md:flex md:w-auto md:mr-5 text-white lg:ml-64 md:ml-16"
+          className="hidden w-full md:flex md:w-auto text-white"
           ref={menuRef}
         >
-          <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-3xl text-3xl pl-0 md:p-0 space-y-3 md:space-y-0">
+          <ul className="flex flex-col  mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-3xl text-3xl space-y-3 md:space-y-0 items-center">
             <li className="">
-              <a href="#" className="" aria-current="page">
+              <Link to="#" className="" aria-current="page">
                 Proyectos
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="">
+              <Link to="#" className="">
                 Habilidades
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="">
+              <Link to="#" className="">
                 Desarrollo
-              </a>
-            </li>
-            <li className="md:flex hidden">
-              <a href="">
-                <FontAwesomeIcon icon={faGithub} size="1x" />
-              </a>
-            </li>
-            <li className="md:flex hidden">
-              <a href="">
-                <FontAwesomeIcon icon={faTelegram} size="1x" />
-              </a>
+              </Link>
             </li>
           </ul>
+        </div>
+        <div className="hidden md:flex text-white md:space-x-8 text-3xl">
+          <li className="md:flex hidden">
+            <Link to="">
+              <FontAwesomeIcon icon={faGithub} size="1x" />
+            </Link>
+          </li>
+          <li className="md:flex hidden">
+            <Link to="">
+              <FontAwesomeIcon icon={faTelegram} size="1x" />
+            </Link>
+          </li>
         </div>
       </div>
     </nav>

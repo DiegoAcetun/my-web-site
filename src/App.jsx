@@ -5,8 +5,8 @@ function App() {
   return (
     <>
       <div className="font-serif">
-        <Navbar />
         <Router>
+        <Navbar />
           <Routes>
             <Route exact path="/" element={<Home />} />
           </Routes>
