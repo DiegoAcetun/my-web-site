@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 function App() {
   return (
     <>
-      <div className="font-serif">
+      <div className="font-serif dark:bg-gray-800">
         <Router>
         <Navbar />
           <Routes>

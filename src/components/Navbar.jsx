@@ -11,7 +11,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-white sm:py-3 py-1 border-gray-200 dark:bg-gray-900 w-screen">
+    <nav className="text-black dark:text-white sm:py-3 py-1 dark:border-gray-200 dark:bg-gray-900 w-screen">
       <div className="flex flex-wrap items-center justify-around">
         <Link to="https://flowbite.com/" className="flex items-center">
           <img
@@ -20,7 +20,7 @@ export default function Navbar() {
             alt="logo"
           />
         </Link>
-        <div className="md:hidden text-white">
+        <div className="md:hidden">
           <ul className=" flex space-x-8 text-3xl">
             <li className="hover:bg-transparent">
               <Link to="">
@@ -60,10 +60,7 @@ export default function Navbar() {
           </svg>
         </button>
 
-        <div
-          className="hidden w-full md:flex md:w-auto text-white"
-          ref={menuRef}
-        >
+        <div className="hidden w-full md:flex md:w-auto" ref={menuRef}>
           <ul className="flex flex-col  mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-3xl text-3xl space-y-3 md:space-y-0 items-center">
             <li className="">
               <Link to="#" className="" aria-current="page">
@@ -82,7 +79,7 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-        <div className="hidden md:flex text-white md:space-x-8 text-3xl">
+        <div className="hidden md:flex md:space-x-8 text-3xl">
           <li className="md:flex hidden">
             <Link to="">
               <FontAwesomeIcon icon={faGithub} size="1x" />

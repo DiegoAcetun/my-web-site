@@ -3,7 +3,9 @@ import Card from "../components/Card";
 export default function Projects() {
   return (
     <>
-    <p className="md:m-5 text-6xl text-center text-blue-500">Algunos proyectos que he desarrollado</p>
+      <p className="md:m-5 text-6xl text-center text-blue-500 dark:text-blue-200">
+        Algunos proyectos que he desarrollado
+      </p>
       <div className="flex flex-wrap justify-center items-center">
         <Card
           title="Buscador de películas, series y juegos"
