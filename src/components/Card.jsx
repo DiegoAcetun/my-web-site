@@ -1,20 +1,23 @@
 import React from "react";
-
-export default function Card({image, title, description}) {
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+export default function Card({image=null, title, description, icon=null, textColor}) {
+  const isImage = image !== null;
+  console.log(image);
   return (
     <div
       className={`max-w-sm bg-white rounded-lg border-8 border-red-800 shadow-md flex flex-col p-5 m-5 text-black`}
     >
-      <img className="rounded-lg w-full" src={image} alt={title} />
+      {isImage ? (
+        <img className="rounded-lg w-full" src={image} alt={title} />
+      ) : (
+        <FontAwesomeIcon icon={icon} size="5x" className={textColor} />
+      )}
+
       <div className="mt-8 mb-8">
         <a href="#">
-          <h5 className="text-3xl tracking-tight">
-            {title}
-          </h5>
+          <h5 className="text-3xl tracking-tight">{title}</h5>
         </a>
-        <p className="mb-3 text-2xl">
-          {description}
-        </p>
+        <p className="mb-3 text-2xl">{description}</p>
       </div>
       <a
         href="#"
