@@ -1,10 +1,11 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
+import "./App.css";
 function App() {
   return (
     <>
-      <div className="font-serif dark:bg-gray-800">
+      <div className="font-serif">
         <Router>
         <Navbar />
           <Routes>
