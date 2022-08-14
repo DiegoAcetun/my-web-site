@@ -6,6 +6,7 @@ function App() {
   return (
     <>
       <div className="font-serif">
+        
         <Navbar />
         <Home />
         {/* <Router>
