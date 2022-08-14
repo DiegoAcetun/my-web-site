@@ -1,14 +1,6 @@
 import React from "react";
 import Card from '../components/Card';
-import Html from '../images/html.png';
-import Bootstrap from '../images/Bootstrap1.jpg';
-import Python from '../images/python.png';
-import Javascript from '../images/js.png';
-import ReactImg from "../images/react.jpg";
-import Node from "../images/node.png";
-import Tailwind from "../images/tailwind.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHtml5, faJs, faBootstrap, faReact, faNode, faPython, faCss3, faGitAlt } from "@fortawesome/free-brands-svg-icons";
+import { faHtml5, faJs, faReact, faNode, faPython, faCss3, faGitAlt } from "@fortawesome/free-brands-svg-icons";
 export default function Skills() {
   return (
     <>
@@ -20,21 +12,20 @@ export default function Skills() {
           <Card
             // image={Html}
             icon={faHtml5}
-            title={"Html"}
-            description={"some description"}
+            title={"Html5"}
             textColor={"text-orange-600"}
           />
           <Card
             // image={Javascript}
             icon={faJs}
             title={"JavaScript"}
-            description={"some description"}
+            description={"Manejo del dom, dominio de funciones, variables, objetos, etc"}
             textColor={"text-yellow-400"}
           />
           <Card
             icon={faCss3}
             title={"Css"}
-            description={"some description"}
+            description={"Framworks tailwind y bootstrap"}
             textColor={"text-blue-600"}
           />
 
@@ -42,21 +33,21 @@ export default function Skills() {
             // image= {ReactImg}
             title={"React"}
             icon={faReact}
-            description={"some description"}
+            description={"Hooks, componentes, estados, props"}
             textColor={"text-cyan-400"}
           />
           <Card
             // image= {Node}
             icon={faNode}
             title={"Node"}
-            description={"some description"}
+            description={"Express, mongoose, mongodb, rest api"}
             textColor={"text-green-500"}
           />
           <Card
             // image= {Python}
             icon={faPython}
             title={"Python"}
-            description={"some description"}
+            description={"Framework flask para servidor"}
             textColor={"text-blue-500"}
           />
 
@@ -64,7 +55,7 @@ export default function Skills() {
             // image={Bootstrap}
             icon={faGitAlt}
             title={"Git"}
-            description={"some description"}
+            description={"Manejo de repositorios"}
             textColor={"text-red-600"}
           />
         </div>

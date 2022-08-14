@@ -5,7 +5,7 @@ import { faPeopleGroup, faBrain, faLanguage, faFileWord } from "@fortawesome/fre
 export default function Skills() {
   return (
     <>
-      <div id="skills">
+      <div id="skills" className="scroll-mt-16">
         <p className="text-6xl text-blue-600 dark:text-blue-200 text-center">
           Otras hablidades
         </p>
@@ -13,25 +13,21 @@ export default function Skills() {
           <Card
             title={"Trabajo en equipo"}
             icon={faPeopleGroup}
-            description={"some description"}
             textColor={"text-orange-300"}
           />
           <Card
             title={"Resolución de problemas"}
             icon={faBrain}
-            description={"some description"}
             textColor={"text-red-300"}
           />
           <Card
             title={"Inglés Básico"}
             icon={faLanguage}
-            description={"some description"}
             textColor={"text-blue-500"}
           />
           <Card
-            title={"Inglés Básico"}
+            title={"Manejo de office"}
             icon={faFileWord}
-            description={"some description"}
             textColor={"text-blue-600"}
           />
         </div>

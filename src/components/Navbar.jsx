@@ -1,7 +1,5 @@
 import React from "react";
 import { useRef } from "react";
-import "../css/navbar.css";
-import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faTelegram } from "@fortawesome/free-brands-svg-icons";
 import { faAddressCard } from "@fortawesome/free-regular-svg-icons";
@@ -16,11 +14,6 @@ export default function Navbar() {
     <nav className="text-black dark:text-white sm:py-3 py-1 dark:border-gray-200 dark:bg-gray-500 w-screen fixed top-0">
       <div className="flex flex-wrap items-center justify-around">
         <a href="#about" className="flex items-center">
-          {/* <img
-            src="https://raw.githubusercontent.com/DiegoAcetun/my-web-site/main/public/favicon.ico"
-            className="mr-3 h-6 sm:h-7"
-            alt="logo"
-          /> */}
           <FontAwesomeIcon
             icon={faAddressCard}
             size="1x"
@@ -30,12 +23,12 @@ export default function Navbar() {
         <div className="md:hidden">
           <ul className=" flex space-x-8 text-3xl">
             <li className="hover:bg-transparent">
-              <a href="">
+              <a href="https://github.com/DiegoAcetun">
                 <FontAwesomeIcon icon={faGithub} size="1x" />
               </a>
             </li>
             <li className="hover:bg-transparent">
-              <a href="">
+              <a href="https://t.me/DiegoAcetun">
                 <FontAwesomeIcon icon={faTelegram} size="1x" />
               </a>
             </li>
@@ -88,12 +81,12 @@ export default function Navbar() {
         </div>
         <div className="hidden md:flex md:space-x-8 text-3xl">
           <li className="md:flex hidden">
-            <a href="">
+            <a href="https://github.com/DiegoAcetun">
               <FontAwesomeIcon icon={faGithub} size="1x" />
             </a>
           </li>
           <li className="md:flex hidden">
-            <a href="">
+            <a href="https://t.me/DiegoAcetun">
               <FontAwesomeIcon icon={faTelegram} size="1x" />
             </a>
           </li>

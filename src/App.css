@@ -1,3 +1,6 @@
 html{
-  @apply dark:bg-gray-800;
+  @apply dark:bg-gray-800 scroll-smooth;
+}
+a{
+  @apply dark:hover:text-blue-300 hover:text-gray-500;
 }
