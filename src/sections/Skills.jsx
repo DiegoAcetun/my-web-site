@@ -1,6 +1,5 @@
 import React from "react";
 import Card from '../components/Card';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPeopleGroup, faBrain, faLanguage, faFileWord } from "@fortawesome/free-solid-svg-icons";
 export default function Skills() {
   return (
