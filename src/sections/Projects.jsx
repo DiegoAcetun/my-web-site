@@ -24,14 +24,14 @@ export default function Projects() {
           />
           <Card
             title="Reproductor Web"
-            description="Reproductor de música desarrollado con Django, consumiendo una api desarrollada con Flask"
+            description="Reproductor de música desarrollado con Django, consumiendo una api desarrollada con Flask."
             link={"https://github.com/DiegoAcetun/ReproductorWeb"}
             icon={faCirclePlay}
             textColor={"text-green-500"}
           />
           <Card
             title="Generador de imágenes pixel art"
-            description="Generador de imágenes pixel art a través de carga de un archivo en un formato en específico, empleando un analizador léxico para su lectura"
+            description="Generador de imágenes pixel art a través de carga de un archivo en un formato en específico, empleando un analizador léxico para su lectura."
             link={"https://github.com/DiegoAcetun/GENERADOR-IMG-PIXELART"}
             icon={faImage}
             textColor={"text-indigo-700"}
@@ -45,7 +45,7 @@ export default function Projects() {
           />
           <Card
             title="Reproductor de música"
-            description="Aplicación de escritorio desarrollada con python y tkinter implementando listas enlazadas circulares para crear las listas de reproducción"
+            description={`Aplicación de escritorio desarrollada con python y tkinter implementando listas enlazadas circulares para crear las listas de reproducción`}
             link={"https://github.com/DiegoAcetun/ReproductorDeMusicaPython"}
             icon={faMusic}
             textColor={"text-red-700"}

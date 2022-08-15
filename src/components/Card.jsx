@@ -20,8 +20,8 @@ export default function Card({
       
 
       <div className="mt-8 mb-8">
-          <h5 className="text-3xl tracking-tight">{title}</h5>
-        {description ? <p className="mb-3 text-2xl">{description}</p> : null}
+          <h5 className="text-3xl text-blue-800 text-center tracking-tight">{title}</h5>
+        {description ? <p className="mb-3 text-2xl text-center">{description}</p> : null}
       </div>
       {link ? (
         <a
