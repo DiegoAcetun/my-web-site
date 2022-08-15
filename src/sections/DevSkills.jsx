@@ -10,13 +10,11 @@ export default function Skills() {
         </p>
         <div className="flex flex-wrap justify-center items-center text-center">
           <Card
-            // image={Html}
             icon={faHtml5}
             title={"Html5"}
             textColor={"text-orange-600"}
           />
           <Card
-            // image={Javascript}
             icon={faJs}
             title={"JavaScript"}
             description={"Manejo del dom, dominio de funciones, variables, objetos, etc"}
@@ -30,21 +28,18 @@ export default function Skills() {
           />
 
           <Card
-            // image= {ReactImg}
             title={"React"}
             icon={faReact}
             description={"Hooks, componentes, estados, props"}
             textColor={"text-cyan-400"}
           />
           <Card
-            // image= {Node}
             icon={faNode}
             title={"Node"}
             description={"Express, mongoose, mongodb, rest api"}
             textColor={"text-green-500"}
           />
           <Card
-            // image= {Python}
             icon={faPython}
             title={"Python"}
             description={"Framework flask para servidor"}
@@ -52,7 +47,6 @@ export default function Skills() {
           />
 
           <Card
-            // image={Bootstrap}
             icon={faGitAlt}
             title={"Git"}
             description={"Manejo de repositorios"}
