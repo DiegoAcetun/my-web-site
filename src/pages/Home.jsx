@@ -5,7 +5,7 @@ import  DevSkills from "../sections/DevSkills";
 import Skills from "../sections/Skills";
 export default function Home() {
   return (
-    <div className="container mx-auto mt-16 text-3xl">
+    <div className="sm:mt-20 mt-12 mx-4">
       <About />
       <Projects />
       <DevSkills />

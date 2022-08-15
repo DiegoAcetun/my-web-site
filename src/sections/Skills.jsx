@@ -4,8 +4,8 @@ import { faPeopleGroup, faBrain, faLanguage, faFileWord } from "@fortawesome/fre
 export default function Skills() {
   return (
     <>
-      <div id="skills" className="scroll-mt-16">
-        <p className="text-6xl text-blue-600 dark:text-blue-200 text-center">
+      <div id="skills" className="sm:scroll-mt-16 scroll-mt-14">
+        <p className="sm:text-6xl text-4xl text-blue-600 dark:text-blue-200 text-center">
           Otras hablidades
         </p>
         <div className="flex flex-wrap justify-center items-center text-center">

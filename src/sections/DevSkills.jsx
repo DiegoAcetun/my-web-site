@@ -4,20 +4,18 @@ import { faHtml5, faJs, faReact, faNode, faPython, faCss3, faGitAlt } from "@for
 export default function Skills() {
   return (
     <>
-      <div id="devSkills" className="scroll-mt-16">
-        <p className="text-6xl text-blue-600 dark:text-blue-200 text-center">
+      <div id="devSkills" className="sm:scroll-mt-16 scroll-mt-14">
+        <p className="sm:text-6xl text-4xl text-blue-600 dark:text-blue-200 text-center">
           Mis hablidades de desarrollo
         </p>
         <div className="flex flex-wrap justify-center items-center text-center">
-          <Card
-            icon={faHtml5}
-            title={"Html5"}
-            textColor={"text-orange-600"}
-          />
+          <Card icon={faHtml5} title={"Html5"} textColor={"text-orange-600"} />
           <Card
             icon={faJs}
             title={"JavaScript"}
-            description={"Manejo del dom, dominio de funciones, variables, objetos, etc"}
+            description={
+              "Manejo del dom, dominio de funciones, variables, objetos, etc"
+            }
             textColor={"text-yellow-400"}
           />
           <Card

@@ -10,18 +10,18 @@ export default function Card({
   // console.log(image);
   return (
     <div
-      className={`bg-white rounded-lg border-8 border-red-800 shadow-md flex flex-col p-5 m-5 text-black xl:w-1/4 lg:w-1/3 md:1/2 sm:w-3/4 w-full `}
+      className={`bg-white rounded-lg border-8 border-red-800 shadow-md flex flex-col p-5 m-5 text-black xl:w-1/4 lg:w-1/3 md:1/2 w-3/4 `}
     >
         <FontAwesomeIcon
           icon={icon}
-          size="5x"
-          className={`${textColor}`}
+          // size="5x"
+          className={`${textColor} sm:text-9xl text-7xl`}
         />
       
 
       <div className="mt-8 mb-8">
-          <h5 className="text-3xl text-blue-800 text-center tracking-tight">{title}</h5>
-        {description ? <p className="mb-3 text-2xl text-center">{description}</p> : null}
+          <h5 className="sm:text-3xl text-2xl text-blue-800 text-center tracking-tight">{title}</h5>
+        {description ? <p className="mb-3 sm:text-2xl text-xl text-center">{description}</p> : null}
       </div>
       {link ? (
         <a
