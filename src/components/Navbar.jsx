@@ -11,9 +11,9 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="text-black dark:text-white sm:py-3 py-1 dark:border-gray-200 dark:bg-gray-500 w-screen fixed top-0">
+    <nav className="text-black dark:text-white sm:py-3 py-1border-gray-200 bg-gray-500 w-screen fixed top-0">
       <div className="flex flex-wrap items-center justify-around">
-        <a href="#about" className="flex items-center">
+        <a href="#" className="flex items-center">
           <FontAwesomeIcon
             icon={faAddressCard}
             size="1x"

@@ -15,7 +15,7 @@ export default function Card({
         <FontAwesomeIcon
           icon={icon}
           size="5x"
-          className={`${textColor} border-8`}
+          className={`${textColor}`}
         />
       
 
