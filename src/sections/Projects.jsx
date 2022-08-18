@@ -17,7 +17,7 @@ export default function Projects() {
         <div className="flex flex-wrap justify-center items-center">
           <Card
             title="Buscador de películas, series y juegos"
-            description="Aplicación realizada consumiendo la API OMDb"
+            description="Aplicación desarollada en react consumiendo la API OMDb"
             link={"https://diegoacetun-movie-app.netlify.app/"}
             icon={faClapperboard}
             textColor={"text-blue-500"}
