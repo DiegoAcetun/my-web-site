@@ -5,15 +5,8 @@ function App() {
   return (
     <>
       <div className="font-serif m-0">
-
         <Navbar />
         <Home />
-        {/* <Router>
-        <Navbar />
-          <Routes>
-            <Route exact path="/" element={<Home />} />
-          </Routes>
-        </Router> */}
       </div>
     </>
   );
