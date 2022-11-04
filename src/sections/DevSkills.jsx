@@ -4,7 +4,11 @@ import { faHtml5, faJs, faReact, faNode, faPython, faCss3, faGitAlt } from "@for
 export default function Skills() {
   return (
     <>
-      <div id="devSkills" className="sm:scroll-mt-16 scroll-mt-14">
+      <div
+        id="devSkills"
+        className="sm:scroll-mt-16 scroll-mt-14"
+        data-aos="fade-down"
+      >
         <p className="sm:text-6xl text-4xl text-blue-600 dark:text-blue-200 text-center">
           Mis hablidades de desarrollo
         </p>

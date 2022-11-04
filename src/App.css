@@ -1,6 +1,12 @@
 html{
   @apply dark:bg-gray-800 scroll-smooth;
 }
-a{
-  @apply hover:text-blue-300;
+
+a>svg{
+  @apply hover:scale-110;
+  @apply hover:text-violet-800;
+}
+
+ul>li>a{
+  @apply hover:text-violet-800;
 }

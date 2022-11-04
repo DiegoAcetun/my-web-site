@@ -10,8 +10,12 @@ import {
 export default function Projects() {
   return (
     <>
-      <div id="projects" className="sm:scroll-mt-16 scroll-mt-14 mt-5">
-        <p className="md:m-5 sm:text-6xl text-4xl text-center text-blue-500 dark:text-blue-200">
+      <div
+        id="projects"
+        className="sm:scroll-mt-16 scroll-mt-14 mt-5"
+        data-aos="fade-down"
+      >
+        <p className="md:m-5 sm:text-6xl text-4xl text-center text-violet-800 dark:text-blue-200">
           Algunos proyectos que he desarrollado
         </p>
         <div className="flex flex-wrap justify-center items-center">

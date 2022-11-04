@@ -7,11 +7,19 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 export default function Navbar() {
   const menuRef = useRef(null);
   const handleClick = () => {
-    menuRef.current.classList.toggle("hidden");
+    // menuRef.current.classList.toggle("hidden");
+    // menuRef.current.classList.toggle("");
+    // menuRef.current.classList.toggle("hidden");
+    menuRef.current.classList.toggle("-translate-y-96");
+    menuRef.current.classList.toggle("translate-y-24");
+    // menuRef.current.classList.toggle("translate-y-24");
+    // menuRef.current.classList.toggle("absolute");
+    // transition ease-in-out -translate-y-96 duration-1000
+
   };
 
   return (
-    <nav className="text-black dark:text-white sm:py-3 py-1border-gray-200 bg-gray-500 w-screen fixed top-0">
+    <nav className="text-black dark:text-white bg-white sm:py-3 py-1border-gray-200 w-screen fixed top-0 z-10">
       <div className="flex flex-wrap items-center justify-around">
         <a href="#" className="flex items-center">
           <FontAwesomeIcon
@@ -47,8 +55,11 @@ export default function Navbar() {
           <FontAwesomeIcon icon={faBars} size="1x" />
         </button>
 
-        <div className="hidden w-full md:flex md:w-auto" ref={menuRef}>
-          <ul className="flex flex-col  mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-3xl text-3xl space-y-3 md:space-y-0 items-center">
+        <div
+          className="transition ease-in-out -translate-y-96 md:translate-y-0 w-full md:flex md:w-auto md:static absolute bg-white duration-1000 mb-6 md:mb-0"
+          ref={menuRef}
+        >
+          <ul className="flex flex-col md:flex-row md:space-x-8 md:text-3xl text-3xl space-y-3 md:space-y-0 items-center">
             <li className="">
               <a href="#projects" className="" aria-current="page">
                 Proyectos
