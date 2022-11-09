@@ -1,0 +1,54 @@
+---
+import Card from "../nivel1/Card.astro";
+---
+
+<div id="devSkills" class="sm:scroll-mt-16 scroll-mt-14" data-aos="fade-down">
+  <p class="sm:text-6xl text-4xl text-blue-600 dark:text-blue-200 text-center">
+    Mis hablidades de desarrollo
+  </p>
+  <div class="flex flex-wrap justify-center items-center text-center">
+    <Card
+      icon="vscode-icons:file-type-html"
+      title={"Html5"}
+      textColor={"text-orange-600"}
+    />
+    <Card
+      icon="logos:javascript"
+      title={"JavaScript"}
+      description={"Manejo del dom, dominio de funciones, variables, objetos, etc"}
+      textColor=""
+    />
+    <Card
+      icon="logos:tailwindcss"
+      title={"Css"}
+      description={"Framworks tailwind y bootstrap"}
+      textColor={"text-blue-600"}
+    />
+
+    <Card
+      title={"React"}
+      icon="logos:react"
+      description={"Hooks, componentes, estados, props"}
+      textColor={"text-cyan-400"}
+    />
+    <Card
+      icon="vscode-icons:file-type-node"
+      title={"Node"}
+      description={"Express, mongoose, mongodb, rest api"}
+      textColor={"text-green-500"}
+    />
+    <Card
+      icon="logos:python"
+      title={"Python"}
+      description={"Framework flask para servidor"}
+      textColor={"text-blue-500"}
+    />
+
+    <Card
+      icon="vscode-icons:file-type-git"
+      title={"Git"}
+      description={"Manejo de repositorios"}
+      textColor={"text-red-600"}
+    />
+  </div>
+</div>

@@ -1,0 +1,76 @@
+---
+import { Icon } from "astro-icon";
+---
+
+<nav
+  class="text-black dark:text-white bg-white py-3 py-1border-gray-200 w-screen fixed top-0 z-10"
+>
+  <div class="flex flex-wrap items-center justify-around">
+    <a href="#" class="flex items-center">
+      <!-- <FontAwesomeIcon
+            icon={faAddressCard}
+            size="1x"
+            class="text-3xl"
+          /> -->
+      <Icon name="mdi:card-account-details-outline" class="w-8 icon-change-scale" />
+    </a>
+    <div class="md:hidden">
+      <ul class="flex space-x-8 text-3xl">
+        <li class="hover:bg-transparent">
+          <a href="https://github.com/DiegoAcetun">
+            <!-- <FontAwesomeIcon icon={faGithub} size="1x" /> -->
+            <Icon name="mdi:github" class="w-8 icon-change-scale" />
+          </a>
+        </li>
+        <li class="hover:bg-transparent">
+          <a href="https://t.me/DiegoAcetun">
+            <!-- <FontAwesomeIcon icon={faTelegram} size="1x" /> -->
+            <Icon name="ic:outline-telegram" class="w-8 icon-change-scale" />
+          </a>
+        </li>
+      </ul>
+    </div>
+    <button
+      data-collapse-toggle="navbar-default"
+      type="button"
+      class="inline-flex items-center text-3xlrounded-lg md:hidden"
+      id="menuButton"
+    >
+      <!-- <FontAwesomeIcon icon={faBars} size="1x" /> -->
+      <Icon name="radix-icons:hamburger-menu" class="w-8 icon-change-scale" />
+    </button>
+
+    <div
+      class="transition ease-in-out -translate-y-96 md:translate-y-0 w-full md:flex md:w-auto md:static absolute bg-white duration-1000 mb-6 md:mb-0"
+      id="menu"
+    >
+      <ul
+        class="flex flex-col md:flex-row md:space-x-8 md:text-3xl text-3xl space-y-3 md:space-y-0 items-center"
+      >
+        <li class="">
+          <a href="#projects" class="" aria-current="page"> Proyectos</a>
+        </li>
+        <li>
+          <a href="#devSkills" class=""> Desarrollo</a>
+        </li>
+        <li>
+          <a href="#skills" class=""> Habilidades</a>
+        </li>
+      </ul>
+    </div>
+    <div class="hidden md:flex md:space-x-8 text-3xl">
+      <li class="md:flex hidden">
+        <a href="https://github.com/DiegoAcetun">
+          <!-- <FontAwesomeIcon icon={faGithub} size="1x" /> -->
+          <Icon name="mdi:github" class="w-8 icon-change-scale" />
+        </a>
+      </li>
+      <li class="md:flex hidden">
+        <a href="https://t.me/DiegoAcetun">
+          <!-- <FontAwesomeIcon icon={faTelegram} size="1x" /> -->
+          <Icon name="ic:outline-telegram" class="w-8 icon-change-scale" />
+        </a>
+      </li>
+    </div>
+  </div>
+</nav>

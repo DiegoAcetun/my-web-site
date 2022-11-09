@@ -1,0 +1,45 @@
+---
+import { Icon } from "astro-icon";
+export interface Props {
+  title: string;
+  description?: string;
+  icon: string;
+  textColor: string;
+  link?: string;
+  isProject?: boolean;
+}
+const { title, description, icon, textColor, link, isProject } = Astro.props;
+---
+
+<div
+  class={`bg-white rounded-lg border-8 border-orange-400 shadow-md p-5 m-5 xl:w-1/4 lg:w-1/3 md:w-1/2 w-3/4 ${
+    isProject
+      ? "md:transition md:ease-in-out md:hover:scale-110 md:duration-100 hover:cursor-pointer"
+      : ""
+  }`}
+>
+  <a href={link} class="flex flex-col">
+    <Icon name={icon} class={`w-32 border-4 self-center ${textColor}`} />
+
+    <div class="mt-8 mb-8">
+      <h5 class="sm:text-3xl text-2xl text-blue-800 text-center tracking-tight">
+        {title}
+      </h5>
+      {
+        description ? (
+          <p class="mb-3 sm:text-2xl text-xl text-center">{description}</p>
+        ) : null
+      }
+    </div>
+  </a>
+</div>
+<!-- {
+    link ? (
+      <a
+        href={link}
+        class="flex border bg-violet-800 rounded-lg w-full text-3xl justify-center mt-auto text-white"
+      >
+        <p>Ver</p>
+      </a>
+    ) : null
+  } -->
