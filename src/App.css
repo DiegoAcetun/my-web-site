@@ -1,6 +1,0 @@
-html{
-  @apply dark:bg-gray-800 scroll-smooth;
-}
-a{
-  @apply hover:text-blue-300;
-}

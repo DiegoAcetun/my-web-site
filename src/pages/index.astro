@@ -1,0 +1,36 @@
+---
+import Navbar from "../components/nivel1/Navbar.astro";
+import Layout from "../layouts/Layout.astro";
+import About from "../components/sections/About.astro";
+import Projects from "../components/sections/Projects.astro";
+import DevSkills from "../components/sections/DevSkills.astro";
+import Skills from "../components/sections/Skills.astro";
+// const icono = "ic:baseline-light-mode";
+---
+
+<Layout title="Welcome to Astro.">
+  <!-- <h1>hello astro</h1> -->
+  <!-- <Icon name="logos:python" class="w-6" /> -->
+  <div class="font-serif m-0">
+    <Navbar />
+    <About />
+    <!-- <button class="border-4 bg-slate-500 border-red-400 p-3 rounded-full" id="dark">claro/oscuro</button> -->
+    <Projects />
+    <DevSkills />
+    <Skills />
+  </div>
+  <script>
+    // document.documentElement.classList.add('dark')
+    document.getElementById("dark").addEventListener("click", () => {
+      document.documentElement.classList.toggle("dark");
+      document.getElementById("icon-dark-mode").classList.toggle("hidden");
+      document.getElementById("icon-light-mode").classList.toggle("hidden");
+    });
+    document
+      .getElementById("menuButton")
+      .addEventListener("click", function () {
+        document.getElementById("menu").classList.toggle("-translate-y-96");
+        document.getElementById("menu").classList.toggle("translate-y-24");
+      });
+  </script>
+</Layout>
