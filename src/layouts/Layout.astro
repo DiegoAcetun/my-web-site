@@ -21,16 +21,22 @@ const { title } = Astro.props;
     <slot />
     <style is:global>
       html {
-        @apply dark:bg-gray-800 scroll-smooth;
+        @apply scroll-smooth;
+      }
+
+      body{
+        @apply dark:bg-gray-800
       }
 
       .icon-change-scale {
         @apply hover:scale-110;
         @apply hover:text-violet-800;
+        @apply dark:hover:text-violet-300;
       }
 
       ul > li > a {
         @apply hover:text-violet-800;
+        @apply dark:hover:text-violet-300;
       }
     </style>
   </body>
