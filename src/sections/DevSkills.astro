@@ -1,61 +1,74 @@
 ---
 import Card from "../components/Card.astro";
+
+const skills = [
+  {
+    icon: "vscode-icons:file-type-html",
+    title: "Html5",
+    textColor: "text-orange-600",
+  },
+  {
+    icon: "logos:javascript",
+    title: "JavaScript",
+    description:
+      "Manejo del dom, dominio de funciones, variables, objetos, etc",
+    textColor: "",
+  },
+  {
+    icon: "logos:tailwindcss-icon",
+    title: "Css",
+    description: "Manejo de clases",
+    textColor: "text-blue-600",
+  },
+  {
+    icon: "logos:bootstrap",
+    title: "Boostrap",
+    description: "Manejo de clases y componentes",
+    textColor: "text-blue-600",
+  },
+  {
+    icon: "logos:react",
+    title: "React",
+    description: "Hooks, componentes, estados, props",
+    textColor: "text-cyan-400",
+  },
+  {
+    icon: "vscode-icons:file-type-node",
+    title: "Node",
+    description: "Express, mongoose, mongodb, rest api",
+    textColor: "text-green-500",
+  },
+  {
+    icon: "logos:python",
+    title: "Python",
+    description: "Framework flask para servidor",
+    textColor: "text-blue-500",
+  },
+  {
+    icon: "vscode-icons:file-type-git",
+    title: "Git",
+    description: "Manejo de repositorios",
+    textColor: "text-red-600",
+  },
+];
 ---
 
 <div id="devSkills" class="sm:scroll-mt-16 scroll-mt-14" data-aos="fade-down">
-  <p class="sm:text-6xl text-4xl text-violet-800 dark:text-violet-300 text-center">
+  <p
+    class="sm:text-6xl text-4xl text-violet-800 dark:text-violet-300 text-center"
+  >
     Mis hablidades de desarrollo
   </p>
   <div class="flex flex-wrap justify-center items-center text-center">
-    <Card
-      icon="vscode-icons:file-type-html"
-      title={"Html5"}
-      textColor={"text-orange-600"}
-    />
-    <Card
-      icon="logos:javascript"
-      title={"JavaScript"}
-      description={"Manejo del dom, dominio de funciones, variables, objetos, etc"}
-      textColor=""
-    />
-    <Card
-      icon="logos:tailwindcss-icon"
-      title="Css"
-      description="Manejo de clases"
-      textColor="text-blue-600"
-    />
-
-    <Card
-      icon="logos:bootstrap"
-      title={"Boostrap"}
-      description="Manejo de clases y componentes"
-      textColor={"text-blue-600"}
-    />
-
-    <Card
-      title={"React"}
-      icon="logos:react"
-      description={"Hooks, componentes, estados, props"}
-      textColor={"text-cyan-400"}
-    />
-    <Card
-      icon="vscode-icons:file-type-node"
-      title={"Node"}
-      description={"Express, mongoose, mongodb, rest api"}
-      textColor={"text-green-500"}
-    />
-    <Card
-      icon="logos:python"
-      title={"Python"}
-      description={"Framework flask para servidor"}
-      textColor={"text-blue-500"}
-    />
-
-    <Card
-      icon="vscode-icons:file-type-git"
-      title={"Git"}
-      description={"Manejo de repositorios"}
-      textColor={"text-red-600"}
-    />
+    {
+      skills.map(({ icon, title, description, textColor }) => (
+        <Card
+          title={title}
+          description={description}
+          icon={icon}
+          textColor={textColor}
+        />
+      ))
+    }
   </div>
 </div>
