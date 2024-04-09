@@ -1,5 +1,52 @@
 ---
 import Card from "../components/Card.astro";
+
+const projects = [
+  {
+    title: "Buscador de películas, series y juegos",
+    description: "Aplicación desarollada en react consumiendo la API OMDb",
+    link: "https://diegoacetun-movie-app.netlify.app/",
+    textColor: "text-blue-500",
+    icon: "fluent:movies-and-tv-16-filled",
+    isProject: true,
+  },
+  {
+    title: "Reproductor Web",
+    description:
+      "Reproductor de música desarrollado con Django, consumiendo una api desarrollada con Flask.",
+    link: "https://github.com/d-acetun/ReproductorWeb",
+    textColor: "text-green-500",
+    icon: "carbon:data-player",
+    isProject: true,
+  },
+  {
+    title: "Generador de imágenes pixel art",
+    description:
+      "Generador de imágenes pixel art a través de carga de un archivo en un formato en específico, empleando un analizador léxico para su lectura.",
+    link: "https://github.com/d-acetun/GENERADOR-IMG-PIXELART",
+    textColor: "text-indigo-700",
+    icon: "pixelarticons:coin",
+    isProject: true,
+  },
+  {
+    title: "Control de productos",
+    description:
+      "Aplicación de escritorio desarrollada con python, tkinter y mysql para llevar un control de productos",
+    link: "https://github.com/d-acetun/ControlDeProductos",
+    textColor: "text-zinc-600",
+    icon: "bi:clipboard-check",
+    isProject: true,
+  },
+  {
+    title: "Reproductor de música",
+    description:
+      "Aplicación de escritorio desarrollada con python y tkinter implementando listas enlazadas circulares para crear las listas de reproducción",
+    link: "https://github.com/d-acetun/ReproductorDeMusicaPython",
+    textColor: "",
+    icon: "icon-park:folder-music",
+    isProject: true,
+  },
+];
 ---
 
 <div
@@ -13,46 +60,19 @@ import Card from "../components/Card.astro";
     Algunos proyectos que he desarrollado
   </p>
   <div class="flex flex-wrap justify-center items-center">
-    <Card
-      title="Buscador de películas, series y juegos"
-      description="Aplicación desarollada en react consumiendo la API OMDb"
-      link={"https://diegoacetun-movie-app.netlify.app/"}
-      textColor={"text-blue-500"}
-      icon="fluent:movies-and-tv-16-filled"
-      isProject={true}
-    />
-    <Card
-      title="Reproductor Web"
-      description="Reproductor de música desarrollado con Django, consumiendo una api desarrollada con Flask."
-      link={"https://github.com/d-acetun/ReproductorWeb"}
-      textColor={"text-green-500"}
-      icon="carbon:data-player"
-      isProject={true}
-    />
-    <Card
-      title="Generador de imágenes pixel art"
-      description="Generador de imágenes pixel art a través de carga de un archivo en un formato en específico, empleando un analizador léxico para su lectura."
-      link={"https://github.com/d-acetun/GENERADOR-IMG-PIXELART"}
-      textColor={"text-indigo-700"}
-      icon="pixelarticons:coin"
-      isProject={true}
-    />
-    <Card
-      title="Control de productos"
-      description="Aplicación de escritorio desarrollada con python, tkinter y mysql para llevar un control de productos"
-      link={"https://github.com/d-acetun/ControlDeProductos"}
-      textColor={"text-zinc-600"}
-      icon="bi:clipboard-check"
-      isProject={true}
-    />
-    <Card
-      title="Reproductor de música"
-      description={`Aplicación de escritorio desarrollada con python y tkinter implementando listas enlazadas circulares para crear las listas de reproducción`}
-      link={"https://github.com/d-acetun/ReproductorDeMusicaPython"}
-      textColor=""
-      icon="icon-park:folder-music"
-      isProject={true}
-    />
+    {
+      projects.map(
+        ({ title, description, link, textColor, icon, isProject }) => (
+          <Card
+            title={title}
+            description={description}
+            link={link}
+            textColor={textColor}
+            icon={icon}
+            isProject={isProject}
+          />
+        )
+      )
+    }
   </div>
 </div>
-
