@@ -18,7 +18,7 @@ const { title, description, icon, textColor, link, isProject } = Astro.props;
       : ""
   }`}
 >
-  <a href={link} class="flex flex-col">
+  <a href={link} target="_blank" class="flex flex-col">
     <Icon name={icon} class={`w-32 self-center ${textColor}`} />
 
     <div class="mt-8 mb-8">
