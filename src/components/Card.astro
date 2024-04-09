@@ -4,11 +4,18 @@ export interface Props {
   title: string;
   description?: string;
   icon: string;
-  textColor: string;
+  iconColor?: string;
   link?: string;
   isProject?: boolean;
 }
-const { title, description, icon, textColor, link, isProject } = Astro.props;
+const {
+  title,
+  description,
+  icon,
+  iconColor = "",
+  link,
+  isProject,
+} = Astro.props;
 ---
 
 <div
@@ -19,7 +26,7 @@ const { title, description, icon, textColor, link, isProject } = Astro.props;
   }`}
 >
   <a href={link} target="_blank" class="flex flex-col">
-    <Icon name={icon} class={`w-32 self-center ${textColor}`} />
+    <Icon name={icon} class={`w-32 self-center ${iconColor}`} />
 
     <div class="mt-8 mb-8">
       <h5 class="sm:text-3xl text-2xl text-blue-800 text-center tracking-tight">
