@@ -1,29 +1,48 @@
 ---
 import Card from "../components/Card.astro";
+const skills = [
+  {
+    title: "Trabajo en equipo",
+    icon: "vaadin:group",
+    iconColor: "text-orange-300",
+  },
+  {
+    title: "Resolución de problemas",
+    icon: "ic:sharp-check-circle",
+    iconColor: "text-green-500",
+  },
+  {
+    title: "Creatividad y lógica",
+    icon: "carbon:logical-partition",
+    iconColor: "text-zinc-500",
+  },
+  {
+    title: "Comunicación",
+    icon: "fluent:communication-person-20-filled",
+    iconColor: "text-blue-500",
+  },
+  {
+    title: "Gestión de tiempo",
+    icon: "icon-park:time",
+  },
+  {
+    title: "Habilidad para aprender nuevas tecnologías",
+    icon: "eos-icons:machine-learning-outlined",
+  },
+];
 ---
+
 <div id="softSkills" class="sm:scroll-mt-16 scroll-mt-14">
-        <p class="sm:text-6xl text-4xl text-violet-800 dark:text-violet-300 text-center">
-          Otras Habilidades
-        </p>
-        <div class="flex flex-wrap justify-center items-center text-center">
-          <Card
-            title="Trabajo en equipo"
-            icon="vaadin:group"
-            iconColor="text-orange-300"
-          />
-          <Card
-            title="Resolución de problemas"
-            icon="ic:sharp-check-circle"
-            iconColor="text-green-500"
-          />
-          <Card
-            title="Inglés Básico"
-            icon="icon-park:english"
-          />
-          <Card
-            title="Manejo de google sheets"
-            icon="bi:file-earmark-spreadsheet"
-            iconColor="text-green-600"
-          />
-        </div>
-      </div>
+  <p
+    class="sm:text-6xl text-4xl text-violet-800 dark:text-violet-300 text-center"
+  >
+    Otras Habilidades
+  </p>
+  <div class="flex flex-wrap justify-center items-center text-center">
+    {
+      skills.map(({ title, icon, iconColor }) => (
+        <Card title={title} icon={icon} iconColor={iconColor} />
+      ))
+    }
+  </div>
+</div>
